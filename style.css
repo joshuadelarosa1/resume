@@ -1,36 +1,120 @@
+/* COLOR PALETTE:
+    Minty Rose: 229, 209, 208 or #E5D1D0
+    Dark Green: 20, 40, 29 or #14281D
+    Celadon: 179, 239, 178 or #B3EFB2
+    Hunter Green: 53, 88, 52 or #355834
+    Tea Green: 194, 234, 189 or #C2EABD
+    Dark Sea Green: rgb(143 188 143) or #8FBC8F
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* GLOBAL STYLES
+----------------------------------------------------------- */ 
+:root {
+    --dark-green: #14281D;
+    --minty-rose: #E5D1D0;
+    --hunter-green: #355834;
+    --tea-green: #C2EABD;
+    --celadon: #B3EFB2;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: white;
+    margin: 0;
+    font-family: poppins;
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
-img {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.resume-links {
-    text-align : center;
-    padding: 50px;
-}
-
-a:link {
-    color: blue;
-}
-  
 a:visited {
     color: purple;
 }
 
 a:hover {
     color: hotpink;
+    text-decoration: none;
 }
 
-p {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.button {
+    font-family: poppins;
+}
+
+/* MAIN
+----------------------------------------------------------- */
+.layout {
+    display: grid;
+    grid: "sidebar body" 1fr / auto 1fr;
+    gap: 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    position: relative;
+    background-color: lightblue;
+}
+
+.main-body {
+    grid-area: body;
+    margin-right: 20px;
+}
+
+#headshot {
+    width: 80%;
+    max-width: 240px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+.resume-links {
+    margin-top: -5px;
+    list-style-type: none;
+}
+
+.resume-links li {
+    display: inline-block;
+    padding-inline: 8px;
+}
+
+#about-me { 
+    font-size: 30px;
+    color: lightcoral;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.navbar1 {
+    list-style: none;
+    position: fixed;
+    text-align: left;
+    background-color: lightblue;
+}
+
+.navbar1 li a {
+    text-decoration: none;
+}
+
+.coursework {
+    font-size: 12px;
+}
+
+/* FOOTER
+----------------------------------------------------------- */ 
+footer {
+    background-color: antiquewhite;
+    margin-top: -16px;
+}
+
+footer p {
+    font-family: poppins;
 }
