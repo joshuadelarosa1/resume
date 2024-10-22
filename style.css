@@ -29,19 +29,24 @@ html {
 
 body {
     margin: 0;
-    font-family: poppins;
+    background-color: #f0f0f0;
+    font-family: poppins, "Helvetica Neue", Arial;
 }
 
 h1 {
     text-align: left;
 }
 
+h3 {
+    color: var(--dark-green);
+}
+
 a:visited {
-    color: purple;
+    color: #77c074;
 }
 
 a:hover {
-    color: hotpink;
+    color: var(--celadon);
     text-decoration: none;
 }
 
@@ -59,62 +64,119 @@ a:hover {
 
 .sidebar {
     grid-area: sidebar;
-    position: relative;
-    background-color: lightblue;
+    position: fixed;
+    height: 100vh;
+    background-color: var(--hunter-green);
 }
 
 .main-body {
     grid-area: body;
+    margin-left: 280px;
     margin-right: 20px;
 }
 
 #headshot {
-    width: 80%;
+    width: 70%;
     max-width: 240px;
     height: auto;
-    margin-top: 120px;
+    margin-top: 30px;
     margin-left: 30px;
 }
 
 .resume-links {
     margin-top: -5px;
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 .resume-links li {
     display: inline-block;
     padding-inline: 8px;
+    font-size: 12px; 
 }
 
-#about-me { 
-    font-size: 30px;
-    color: lightcoral;
-    margin-bottom: 0;
-    margin-top: 0;
+.resume-links li i {
+    color: white;
+}
+
+.resume-links li a {
+    color: var(--tea-green);
 }
 
 .navbar1 {
     list-style: none;
-    position: fixed;
-    text-align: left;
-    background-color: lightblue;
+    padding-left: 38px;
+}
+
+.navbar1 li {
+    margin-top: 0;
+    margin-bottom: 60px;
+    border-bottom: 2px solid var(--dark-green);
 }
 
 .navbar1 li a {
     text-decoration: none;
+    color: var(--tea-green);
 }
 
-.coursework {
-    font-size: 12px;
+#about-me { 
+    font-size: 30px;
+    color: var(--dark-green);
+    margin-bottom: 0;
+    margin-top: 0;
 }
+
+.pronouns {
+    color: var(--hunter-green)
+}
+
+/* Example taken from: 
+    https://getcssscan.com/css-buttons-examples */
+.button1 {
+  background-color: var(--celadon);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--dark-green);
+  cursor: pointer;
+  display: inline-block;
+  font-family: poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
 
 /* FOOTER
 ----------------------------------------------------------- */ 
 footer {
     background-color: antiquewhite;
-    margin-top: -16px;
+    position: absolute;
+    width: 100%;
+    margin-left: 270px;
+    z-index: 1000;
 }
 
 footer p {
-    font-family: poppins;
+    font-family: poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
 }
