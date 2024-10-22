@@ -10,21 +10,23 @@
 </head>
 <body>
 
-<main class="content-wrapper">
+<main>
     <div class="layout">
         <div class="sidebar">
-            <img id ="headshot" src="images/headshot.jpg" 
+            <img class="headshot" src="images/headshot.jpg" 
                 srcset="" alt="Headshot" witdh="1975px" height="2401px">  
 
             <section>
                 <ul class="resume-links">
                     <li>
                         <i class="fa-brands fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/joshua-delarosa-a313b7256/"> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/joshua-delarosa-a313b7256/"
+                            target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://www.github.com/joshuadelarosa1"> GitHub</a>
+                        <a href="https://www.github.com/joshuadelarosa1"
+                            target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                 </ul>
             </section>
@@ -48,7 +50,8 @@
 
             <section>
                 <h2 id="about-me">About Me</h2>
-                <p>Welcome! My name is Joshua Delarosa <a href="https://pronouns.org/what-and-why" class="pronouns">
+                <p>Welcome! My name is Joshua Delarosa <a href="https://pronouns.org/what-and-why"
+                    class="pronouns" target="_blank" rel="noopener noreferrer">
                     (he/him/<span lang="es-MX">él</span>)</a>,
                     and I am a current third-year student at Grinnell College. I am
                     persuing a double major in Computer Science & Spanish, with a
@@ -66,31 +69,56 @@
 
             <section> 
                 <strong>Need my resume?</strong> <br>
-                <a href="https://drive.google.com/file/d/1V2OnqdV4F-jDZ1KoZS703lzaLIvk18tt/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1V2OnqdV4F-jDZ1KoZS703lzaLIvk18tt/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">
                     <button class="button1" role="button">Find it here!</button>
                 </a>
             </section>
 
-            <section> 
+            <section class="education-container"> 
                 <h3 id="education">Education</h3>
-                <h4>Grinnell College</h4>
-                    <ul class="education-list">
-                        <li>Expected May 2026</li>
-                        <li>B.A. in Computer Science</li>
-                        <li>B.A. in Spanish </li>
-                        <li>Cum GPA: 3.80</li>
-                    </ul> 
+                <h4 class="college-container">
+                    <span>Grinnell College</span> 
+                    <span>Expected May 2026 | Cum GPA: 3.80</span>
+                </h4> 
 
-                <h5>Relevant Coursework</h5>
-                    <ul class="coursework">
-                        <li>CSC-301: Analysis of Algorithms</li>
-                        <li>CSC-207: Object-Oriented Problem Solving, Data Structures & Algorithms</li>
-                        <li>CSC-395: Algorithms, Ethics & Society</li>
-                        <li>MAT-208: Discrete Structures</li>
-                        <li>STA-209: Applied Statistics</li>
-                        <li>CSC-161: Imperative Problem Solving</li>
-                        <li>CSC-151: Functional Problem Solving</li>
-                    </ul>
+                <ul class="education-list">
+                    <li>B.A. in Computer Science (GPA: 4.0)</li>
+                    <li>B.A. in Spanish (GPA: 3.78)</li>
+                </ul> 
+                
+                <div class="learning-container">
+                    <p>
+                        <b>What have I learned?</b> <br>
+                        During 
+                    </p>
+                </div>
+
+                <p class="coursework"><b>Relevant coursework:</b> 
+                    <table class="coursework-table" border=1>
+                        <tr>
+                            <th>Computer Science</th>
+                            <th>Math</th>
+                        </tr>
+                        <tr>
+                            <td>CSC-301: Analysis of Algorithms</td>
+                            <td>MAT-208: Discrete Structures</td>
+                        </tr>
+                        <tr>
+                            <td>CSC-207: Object-Oriented Problem Solving, Data Structures & Algorithms</td>
+                            <td>STA-209: Applied Statistics</td>
+                        </tr>
+                        <tr>
+                            <td>CSC-395: Algorithms, Ethics & Society</td>
+                        </tr>
+                        <tr>
+                            <td>CSC-161: Imperative Problem Solving</td>
+                        </tr>
+                        <tr>
+                            <td>CSC-151: Functional Problem Solving</td>
+                        </tr>
+                    </table>
+                </p>
             </section>
 
             <section>

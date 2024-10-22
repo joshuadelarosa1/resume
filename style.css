@@ -39,6 +39,7 @@ h1 {
 
 h3 {
     color: var(--dark-green);
+    border-bottom: 2px solid var(--dark-green);
 }
 
 a:visited {
@@ -54,6 +55,15 @@ a:hover {
     font-family: poppins;
 }
 
+th {
+    text-align: left;
+    font-size: 15px;
+}
+
+td {
+    font-size: 13px;
+}
+
 /* MAIN
 ----------------------------------------------------------- */
 .layout {
@@ -66,6 +76,7 @@ a:hover {
     grid-area: sidebar;
     position: fixed;
     height: 100vh;
+    z-index: 1000;
     background-color: var(--hunter-green);
 }
 
@@ -75,7 +86,7 @@ a:hover {
     margin-right: 20px;
 }
 
-#headshot {
+.headshot {
     width: 70%;
     max-width: 240px;
     height: auto;
@@ -164,6 +175,36 @@ a:hover {
   background-color: #F082AC;
 }
 
+.college-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.education-list {
+    margin-top: 0;
+}
+
+.learning-container p {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.learning-container p b {
+    font-size: 15px;
+}
+
+.coursework {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.coursework-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
 
 /* FOOTER
 ----------------------------------------------------------- */ 
@@ -171,12 +212,12 @@ footer {
     background-color: antiquewhite;
     position: absolute;
     width: 100%;
-    margin-left: 270px;
-    z-index: 1000;
+    height: 40px;
 }
 
 footer p {
     font-family: poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
-    padding-top: 10px;
+    margin-left: 275px;
+    padding-top: 5px;
 }
