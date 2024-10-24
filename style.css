@@ -118,6 +118,10 @@ td {
     color: var(--tea-green);
 }
 
+.resume-links a:hover {
+    color: #4c874a;
+}
+
 .navbar1 {
     list-style: none;
     padding-left: 38px;
@@ -132,6 +136,10 @@ td {
 .navbar1 li a {
     text-decoration: none;
     color: var(--tea-green);
+}
+
+.navbar1 a:hover {
+    color: #4c874a;
 }
 
 #about-me { 
@@ -195,11 +203,11 @@ td {
 
 .learning-container p {
     margin-top: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .learning-container p b {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .coursework {
@@ -225,10 +233,42 @@ td {
     margin-top: 0;
 }
 
-.programming-descriptions {
-    font-size: 13px;
+.programming-languages {
+    display: flow-root;
+}
+
+.descriptions {
+    font-size: 14px;
     margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.java-project-container {
+    display: flow-root;
+}
+
+.java-project-container iframe {
     margin-left: 10px;
+    height: 200px;
+    max-width: 45%;
+    float: right;
+}
+
+.projects-container h3 {
+    margin-bottom: 0;
+}
+
+.projects-container ul {
+    margin-top: 0;
+}
+
+.more-about-me-container h3 {
+    margin-bottom: 0;
+}
+
+.more-about-me-container p {
+    margin-top: 0;
 }
 
 
