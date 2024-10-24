@@ -221,15 +221,15 @@ td {
     border-collapse: collapse;
 }
 
-.skills-container h3 {
+.sections-container h3 {
     margin-bottom: 0;
 }
 
-.skills-container h4 {
+.sections-container h4 {
     margin: 0;
 }
 
-.skills-container ul {
+.sections-container ul {
     margin-top: 0;
 }
 
