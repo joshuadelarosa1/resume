@@ -42,6 +42,10 @@ h3 {
     border-bottom: 2px solid var(--dark-green);
 }
 
+a {
+    color: var(--hunter-green);
+}
+
 a:visited {
     color: #77c074;
 }
@@ -137,10 +141,6 @@ td {
     margin-top: 0;
 }
 
-.pronouns {
-    color: var(--hunter-green)
-}
-
 /* Example taken from: 
     https://getcssscan.com/css-buttons-examples */
 .button1 {
@@ -170,15 +170,23 @@ td {
   touch-action: manipulation;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: #F082AC;
+.button1:hover,
+.button1:focus {
+  background-color: #4c874a;
 }
 
 .college-container {
     display: flex;
     justify-content: space-between;
     margin: 0;
+}
+
+.college-container h3 {
+    margin-bottom: 0;
+}
+
+.education-container h3 {
+    margin-bottom: 0;
 }
 
 .education-list {
@@ -203,6 +211,24 @@ td {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+}
+
+.skills-container h3 {
+    margin-bottom: 0;
+}
+
+.skills-container h4 {
+    margin: 0;
+}
+
+.skills-container ul {
+    margin-top: 0;
+}
+
+.programming-descriptions {
+    font-size: 13px;
+    margin-top: 0;
+    margin-left: 10px;
 }
 
 
